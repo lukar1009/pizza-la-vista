@@ -1,0 +1,291 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('./resources/img/bckgrnd.png');
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header {
+    background-color: #3e0202;
+    opacity: 0.8;
+    max-height: 300px;
+    max-width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.header-text {
+    font-weight: 500;
+    transition: all 0.15s linear;
+}
+
+.header-text:hover {
+    cursor: pointer;
+    font-size: larger;
+    color:#e2b777;
+}
+
+.img-logo {
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.food-item {
+    height: 100%;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color:#e2b777;
+}
+
+.link:hover {
+    text-decoration: none;
+    color:#e2b777;
+}
+
+.background-white {
+    background-color: white;
+}
+
+#content {
+    margin: 50px;
+}
+
+.card {
+    border: none;
+}
+
+.subtitle {
+    margin:20px;
+    font-size: xx-large;
+    color: white;
+    display:flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.subtitle div {
+    width: 50%;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: rgba(64, 3, 3, 0.3) 0px 19px 38px, rgba(64, 3, 3, 0.22) 0px 15px 12px;
+    background-color: rgba(64, 3, 3,0.8);
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .subtitle div {
+        font-size: large;
+        width:100%;
+    }
+
+    #map {
+        margin-top: 20px;
+    }
+
+    .ol-popup {
+        height: 40px;
+        position: absolute;
+        background-color: #3e0202;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        padding: 1px;
+        border-radius: 1px;
+        border: 1px solid #3e0202;
+        bottom: 1px;
+        left: -5px;
+        min-width: 10px;
+      }
+
+    #popup-content {
+        max-height: 100%;
+        font-size: 10px;
+        margin-top: -10px;
+    }  
+
+
+    .ol-popup:after, .ol-popup:before {
+        top: 100%;
+        height: 0;
+        width: 0;
+    }
+    .ol-popup:after {
+        border-width: 1px;
+        left: 4.8px;
+        margin-left: -1px;
+    }
+    .ol-popup:before {
+        border-width: 1px;
+        left: 4.8px;
+        margin-left: -1px;
+    }
+    .ol-popup-closer {
+        top: 2px;
+        right: 8px;
+    }
+        
+    .card-text.title {
+        font-size: large !important;
+    }
+
+    .card-text.ingredients, .card-text.price {
+        font-size: small !important;
+    }
+
+    .thirdtitle {
+        font-size: small !important;
+    }
+}
+
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.ol-attribution {
+    display: none;
+}
+
+.ol-popup {
+    position: absolute;
+    background-color: #3e0202;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #3e0202;
+    bottom: 12px;
+    left: -50px;
+    min-width: 100px;
+    color: #e2b777;
+  }
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.ol-popup:after {
+    color: #e2b777;
+    border-top-color: #3e0202;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+.ol-popup:before {
+    color: #e2b777;
+    border-top-color: #3e0202;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+.ol-popup-closer {
+    text-decoration: none;
+    color: #e2b777;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.fa:hover{
+    color: #e2b777;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.fa {
+    color: #e2b777;
+}
+
+
+.fa {
+    color: #e2b777;
+}
+
+.opacity-08 {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.card-body {
+    background-color: rgba(64, 3, 3,0.8);
+    text-align: justify;
+    color: white;
+}
+
+.list-group.left {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.list-group.right {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.list-group, .list-group-item {
+    background-color: rgba(64, 3, 3, 0.5);
+    color: white;
+}
+
+.card-text.title {
+    font-size: xx-large;
+}
+
+.card-text.price {
+    font-style: italic;
+}
+
+.food {
+    opacity: 0.9;
+}
+
+.food-text {
+    padding-left: 20%;
+    padding-top: 20%;
+}
+
+.hr-line {
+    background-color: white;
+}
+
+.mtb-10 {
+    margin: 10px 0px;
+    padding: 0;
+}
+
+.thirdtitle {
+    font-size: large;
+    font-weight: bold;
+    color: rgba(64, 3, 3, 0.8);
+}
+
+.header-title {
+    color: rgba(64, 3, 3, 0.8);
+    font-style: italic;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+    background-color: rgba(64, 3, 3, 0.8);
+}
+
+.circle-text {
+    font-size: x-large;
+    font-style: italic;
+}
